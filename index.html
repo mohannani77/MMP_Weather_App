@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   <div class="mns bg-light">
+    <div class="hlo d-flex justify-content-evenly align-items-center w-100">
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-content-evenly align-items-center navs"
+      >
+        <a class="navbar-brand" href="#"><span id="hding">MMP Weather App</span></a>
+          <form
+            class="d-flex justify-content-end w-100 my-2 my-lg-0"
+            id="forms"
+          >
+            <input
+              class="form-control mr-sm-2 w-50 me-2"
+              type="search"
+              id="city"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+              id="submit"
+            >
+              Search
+            </button>
+          </form>
+      </nav>
+    </div>
+   </div>
+<div class="cnts2">
+      <h1 class="d-flex justify-content-center m-3" id="cnts">
+        Weather for: <span id="cityname"> Delhi</span>
+      </h1>
+      <div
+        class="card-deck mb-3 text-center d-flex justify-content-around mt-5 align-items-center"
+        id="temps"
+      >
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="temp2"></span>
+
+              <small class="text-muted"><span>&#8451;</span></small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Temperature is <span id="temp"></span></li>
+              <li>Min Temperature is <span id="min_temp"></span></li>
+              <li>Max Temperature is<span id="max_temp"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Humidity Info</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="humidity2"></span><small class="text-muted">%</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Wind degree is <span id="wind_degrees"></span></li>
+              <li>Feels Like <span id="feels_like"></span></li>
+              <li>Humidity is<span id="humidity"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Wind info</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="wind_speed2"></span>
+              <small class="text-muted">km/hr</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Wind Speed is <span id="wind_speed"></span></li>
+              <li>Sun Rise is <span id="sunrise"></span></li>
+              <li>Sun set is <span id="sunset"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <h1 class="d-flex justify-content-center align-content-center">
+        Other city Weathers
+      </h1>
+      <div class="table-responsive">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Temprature</th>
+              <th scope="col">Min_Temp</th>
+              <th scope="col">Max_Temp</th>
+              <th scope="col">Humidity</th>
+              <th scope="col">Wind Degree</th>
+              <th scope="col">Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Vijayawada</th>
+              <td><span id="vtemp"></span></td>
+              <td><span id="vmin_temp"></span></td>
+              <td><span id="vmax_temp"></span></td>
+              <td><span id="vhumidity"></span></td>
+              <td><span id="vwind_degrees"></span></td>
+              <td><span id="vwind_speed"></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Hydrebad</th>
+              <td><span id="htemp"></span></td>
+              <td><span id="hmin_temp"></span></td>
+              <td><span id="hmax_temp"></span></td>
+              <td><span id="hhumidity"></span></td>
+              <td><span id="hwind_degrees"></span></td>
+              <td><span id="hwind_speed"></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Pune</th>
+              <td><span id="ptemp"></span></td>
+              <td><span id="pmin_temp"></span></td>
+              <td><span id="pmax_temp"></span></td>
+              <td><span id="phumidity"></span></td>
+              <td><span id="pwind_degrees"></span></td>
+              <td><span id="pwind_speed"></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Mumbai</th>
+              <td><span id="mtemp"></span></td>
+              <td><span id="mmin_temp"></span></td>
+              <td><span id="mmax_temp"></span></td>
+              <td><span id="mhumidity"></span></td>
+              <td><span id="mwind_degrees"></span></td>
+              <td><span id="mwind_speed"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

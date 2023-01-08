@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#hding{
+    font-size: 30px;
+    font-weight: 600;
+}
+@media screen and (max-width:780px){
+    #temps{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+#hding{
+  color: blue;
+}
+@media screen and (max-width:600px){
+   
+    
+    /* #forms{
+        top: 100px;
+        position: relative;
+      }
+      #cnts{
+        margin-top: 500px;
+        color: red;
+      }
+      .cnts2{
+        margin-top: 100px;
+      }
+      #hding{
+        display: block;
+      } */
+      
+     
+}
